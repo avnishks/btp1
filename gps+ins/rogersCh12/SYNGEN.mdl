@@ -1,0 +1,3582 @@
+Model {
+  Name			  "SYNGEN"
+  Version		  7.5
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.158"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "UTF-8"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  MaxMDLFileLineLength	  120
+  Created		  "Wed Sep 05 14:37:35 2001"
+  Creator		  "avnish"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "avnish"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sun Dec  2 04:43:26 2012"
+  RTWModifiedTimeStamp	  276324191
+  ModelVersionFormat	  "1.%<AutoIncrement:158>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  on
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  on
+  ShowLineDimensions	  on
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.10.0"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.10.0"
+	  StartTime		  "0.0"
+	  StopTime		  "600.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.01"
+	  InitialStep		  "0.02"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "0.05"
+	  MinStep		  "0.0001"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1"
+	  SolverMode		  "Auto"
+	  Solver		  "ode23"
+	  SolverName		  "ode23"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.10.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "sigsOut"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.10.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    7
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  off
+	  BooleanDataType	  off
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.10.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"none"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskCondExecSysMsg "none"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  StrictBusMsg		  "None"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.10.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  on
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.10.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.10.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.10.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    6
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  on
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.10.0"
+	      Array {
+		Type			"Cell"
+		Dimension		19
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.10.0"
+	      Array {
+		Type			"Cell"
+		Dimension		17
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTCodeCoverageTool     "None"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    " [ 200, 85, 1080, 715 ] "
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "fixdt(1,16,0)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Derivative
+      LinearizePole	      "inf"
+    }
+    Block {
+      BlockType		      Fcn
+      Expr		      "sin(u[1])"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "fixdt(1,16,0)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      IgnoreLimit	      off
+      ZeroCross		      on
+      ContinuousStateAttributes	"''"
+    }
+    Block {
+      BlockType		      Lookup
+      Table		      " rand(1,10)-0.5"
+      LookUpMeth	      "Interpolation-Extrapolation"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+      LUTDesignTableMode      "Redesign Table"
+      LUTDesignDataSource     "Block Dialog"
+      LUTDesignFunctionName   "sqrt(x)"
+      LUTDesignUseExistingBP  on
+      LUTDesignRelError	      "0.01"
+      LUTDesignAbsError	      "1e-6"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+  }
+  System {
+    Name		    "SYNGEN"
+    Location		    [1, 79, 1281, 828]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    139
+    Block {
+      BlockType		      Clock
+      Name		      "Clock"
+      SID		      1
+      Position		      [15, 355, 35, 375]
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux2"
+      SID		      2
+      Ports		      [1, 13]
+      Position		      [585, 150, 590, 280]
+      BackgroundColor	      "black"
+      ShowName		      off
+      Outputs		      "13"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Evaluation"
+      SID		      3
+      Ports		      [5, 2]
+      Position		      [1040, 278, 1135, 352]
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Evaluation"
+	Location		[1, 79, 1281, 828]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "filt est"
+	  SID			  4
+	  Position		  [280, 63, 310, 77]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "true v"
+	  SID			  5
+	  Position		  [280, 138, 310, 152]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "nav v"
+	  SID			  6
+	  Position		  [210, 258, 240, 272]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "nav Cbn"
+	  SID			  7
+	  Position		  [200, 398, 230, 412]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "true Cbn"
+	  SID			  8
+	  Position		  [200, 448, 230, 462]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux1"
+	  SID			  9
+	  Ports			  [1, 3]
+	  Position		  [335, 108, 340, 182]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "3"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux3"
+	  SID			  10
+	  Ports			  [1, 6]
+	  Position		  [335, 28, 340, 107]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "6"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux24"
+	  SID			  11
+	  Ports			  [2, 1]
+	  Position		  [270, 411, 275, 449]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux27"
+	  SID			  12
+	  Ports			  [6, 1]
+	  Position		  [490, 416, 495, 474]
+	  ShowName		  off
+	  Inputs		  "6"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux28"
+	  SID			  13
+	  Ports			  [3, 1]
+	  Position		  [370, 26, 375, 64]
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux29"
+	  SID			  14
+	  Ports			  [2, 1]
+	  Position		  [510, 36, 515, 74]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux9"
+	  SID			  15
+	  Ports			  [3, 1]
+	  Position		  [420, 109, 425, 181]
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum7"
+	  SID			  16
+	  Ports			  [2, 1]
+	  Position		  [355, 110, 375, 130]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum8"
+	  SID			  17
+	  Ports			  [2, 1]
+	  Position		  [370, 135, 390, 155]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum9"
+	  SID			  18
+	  Ports			  [2, 1]
+	  Position		  [385, 160, 405, 180]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "chg sgn"
+	  SID			  19
+	  Position		  [395, 30, 425, 60]
+	  Gain			  "-1"
+	  ParameterDataType	  "sfix(16)"
+	  ParameterScaling	  "2^0"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "sv_e"
+	  SID			  20
+	  Position		  [290, 250, 350, 280]
+	  Expr			  "u(5)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "sv_n"
+	  SID			  21
+	  Position		  [290, 205, 350, 235]
+	  Expr			  "u(4)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "sv_u"
+	  SID			  22
+	  Position		  [290, 295, 350, 325]
+	  Expr			  "u(6)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "tiltx"
+	  SID			  23
+	  Position		  [310, 365, 370, 395]
+	  Expr			  "sin(u(16))*(u(13)*u(20)+u(14)*u(21)+u(15)*u(22))-cos(u(16))*(u(13)*u(17)+u(14)*u(18)+u(15)*u(19))"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "tilty"
+	  SID			  24
+	  Position		  [310, 415, 370, 445]
+	  Expr			  "-(u(10)*u(23)+u(11)*u(24)+u(12)*u(25))"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "tiltz"
+	  SID			  25
+	  Position		  [310, 460, 370, 490]
+	  Expr			  "-sin(u(16))*(u(7)*u(17)+u(8)*u(18)+u(9)*u(19))-cos(u(16))*(u(7)*u(20)+u(8)*u(21)+u(9)*u(22))"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  26
+	  Position		  [540, 48, 570, 62]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  SID			  27
+	  Position		  [520, 438, 550, 452]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "sv_n"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "Sum7"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Demux1"
+	  SrcPort		  1
+	  DstBlock		  "Sum7"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux1"
+	  SrcPort		  2
+	  DstBlock		  "Sum8"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "sv_e"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  DstBlock		  "Sum8"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum7"
+	  SrcPort		  1
+	  DstBlock		  "Mux9"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum8"
+	  SrcPort		  1
+	  DstBlock		  "Mux9"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Demux1"
+	  SrcPort		  3
+	  DstBlock		  "Sum9"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "sv_u"
+	  SrcPort		  1
+	  Points		  [40, 0]
+	  DstBlock		  "Sum9"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum9"
+	  SrcPort		  1
+	  DstBlock		  "Mux9"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Demux3"
+	  SrcPort		  4
+	  Points		  [95, 0; 0, 375]
+	  DstBlock		  "Mux27"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Demux3"
+	  SrcPort		  5
+	  Points		  [110, 0; 0, 370]
+	  DstBlock		  "Mux27"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "Demux3"
+	  SrcPort		  6
+	  Points		  [125, 0; 0, 365]
+	  DstBlock		  "Mux27"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "Demux3"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "Mux28"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux3"
+	  SrcPort		  2
+	  DstBlock		  "Mux28"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Demux3"
+	  SrcPort		  3
+	  Points		  [10, 0]
+	  DstBlock		  "Mux28"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Mux28"
+	  SrcPort		  1
+	  DstBlock		  "chg sgn"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux24"
+	  SrcPort		  1
+	  Points		  [-5, 0; 10, 0]
+	  Branch {
+	    Points		    [0, 45]
+	    DstBlock		    "tiltz"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -50]
+	    DstBlock		    "tiltx"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "tilty"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "tiltx"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, 40]
+	  DstBlock		  "Mux27"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "tilty"
+	  SrcPort		  1
+	  DstBlock		  "Mux27"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "tiltz"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -35]
+	  DstBlock		  "Mux27"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "chg sgn"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, 20]
+	  DstBlock		  "Mux29"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Mux9"
+	  SrcPort		  1
+	  Points		  [65, 0]
+	  DstBlock		  "Mux29"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux29"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "filt est"
+	  SrcPort		  1
+	  DstBlock		  "Demux3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "true v"
+	  SrcPort		  1
+	  DstBlock		  "Demux1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "nav v"
+	  SrcPort		  1
+	  Points		  [20, 0]
+	  Branch {
+	    Points		    [0, -45]
+	    DstBlock		    "sv_n"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "sv_e"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 45]
+	    DstBlock		    "sv_u"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "nav Cbn"
+	  SrcPort		  1
+	  Points		  [0, 15]
+	  DstBlock		  "Mux24"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "true Cbn"
+	  SrcPort		  1
+	  Points		  [0, -15]
+	  DstBlock		  "Mux24"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Mux27"
+	  SrcPort		  1
+	  DstBlock		  "Out2"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "GDOP"
+      SID		      28
+      Ports		      [1]
+      Position		      [650, 164, 680, 196]
+      Floating		      off
+      Location		      [5, 81, 1285, 827]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      YMin		      "3.45"
+      YMax		      "3.75"
+      SaveName		      "ScopeData5"
+      DataFormat	      "StructureWithTime"
+      MaxDataPoints	      "60000"
+      Decimation	      "10"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "GPS sat vis"
+      SID		      29
+      Ports		      [1, 1]
+      Position		      [490, 200, 550, 230]
+      FunctionName	      "gpssat"
+      EnableBusSupport	      off
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "K-filter"
+      SID		      30
+      Ports		      [1, 1]
+      Position		      [860, 215, 920, 245]
+      FunctionName	      "gpsins"
+      Parameters	      "1.0,1000.0^2,1000.0^2,1000.0^2,10.0^2,10.0^2,10.0^2,1.0e-6,1.0e-6,1.0e-6,10.0^2,10.0^2,1.0^2,0"
+      ",-600.,0"
+      EnableBusSupport	      off
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux21"
+      SID		      31
+      Ports		      [4, 1]
+      Position		      [610, 151, 615, 189]
+      ShowName		      off
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux23"
+      SID		      32
+      Ports		      [8, 1]
+      Position		      [610, 199, 615, 281]
+      ShowName		      off
+      Inputs		      "8"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux25"
+      SID		      33
+      Ports		      [2, 1]
+      Position		      [820, 211, 825, 249]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Lookup
+      Name		      "bank cmd\n"
+      SID		      34
+      Position		      [80, 384, 130, 436]
+      InputValues	      "[0,60.,70.,90.,100.,160.,170.,190.,200.,260.,270.,290.,300.,360.,370.,390.,400.,600.]"
+      Table		      "[0,0,25.,25.,0,0,-25.,-25.,0,0,0,0,0,0,0,0,0,0]"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "environment model\n- truth data"
+      SID		      35
+      Ports		      [2, 4]
+      Position		      [185, 310, 350, 415]
+      DropShadow	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"environment model\n- truth data"
+	Location		[1, 79, 1281, 828]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"93"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  36
+	  Position		  [60, 583, 90, 597]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In2"
+	  SID			  37
+	  Position		  [60, 668, 90, 682]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "Cbv dyn"
+	  SID			  38
+	  Ports			  [1, 1]
+	  Position		  [185, 355, 245, 385]
+	  FunctionName		  "attdyn_DCM"
+	  Parameters		  "0,-1.,0,1.,0.,0,0,0,1."
+	  EnableBusSupport	  off
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Cbvxx"
+	  SID			  39
+	  Position		  [250, 395, 310, 425]
+	  BlockMirror		  on
+	  Expr			  "u(1)"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Cbvxx*eta_dot"
+	  SID			  40
+	  Ports			  [2, 1]
+	  Position		  [145, 401, 190, 434]
+	  BlockMirror		  on
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	  RndMeth		  "Floor"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Cbvyx"
+	  SID			  41
+	  Position		  [250, 445, 310, 475]
+	  BlockMirror		  on
+	  Expr			  "u(4)"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Cbvyx*eta_dot"
+	  SID			  42
+	  Ports			  [2, 1]
+	  Position		  [145, 451, 190, 484]
+	  BlockMirror		  on
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	  RndMeth		  "Floor"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Cbvzx"
+	  SID			  43
+	  Position		  [250, 495, 310, 525]
+	  BlockMirror		  on
+	  Expr			  "u(7)"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Cbvzx*eta_dot"
+	  SID			  44
+	  Ports			  [2, 1]
+	  Position		  [145, 506, 190, 539]
+	  BlockMirror		  on
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	  RndMeth		  "Floor"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  45
+	  Ports			  [3, 1]
+	  Position		  [225, 611, 230, 649]
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux1"
+	  SID			  46
+	  Ports			  [3, 1]
+	  Position		  [80, 434, 85, 506]
+	  BlockMirror		  on
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux10"
+	  SID			  47
+	  Ports			  [4, 1]
+	  Position		  [715, 436, 720, 474]
+	  ShowName		  off
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux11"
+	  SID			  48
+	  Ports			  [4, 1]
+	  Position		  [715, 481, 720, 519]
+	  ShowName		  off
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux12"
+	  SID			  49
+	  Ports			  [5, 1]
+	  Position		  [715, 525, 720, 575]
+	  ShowName		  off
+	  Inputs		  "5"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux13"
+	  SID			  50
+	  Ports			  [3, 1]
+	  Position		  [745, 361, 750, 399]
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux14"
+	  SID			  51
+	  Ports			  [3, 1]
+	  Position		  [815, 481, 820, 519]
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux15"
+	  SID			  52
+	  Ports			  [3, 1]
+	  Position		  [860, 91, 865, 129]
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux16"
+	  SID			  53
+	  Ports			  [2, 1]
+	  Position		  [750, 91, 755, 129]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux17"
+	  SID			  54
+	  Ports			  [3, 1]
+	  Position		  [965, 471, 970, 509]
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux18"
+	  SID			  55
+	  Ports			  [2, 1]
+	  Position		  [855, 471, 860, 509]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux19"
+	  SID			  56
+	  Ports			  [2, 1]
+	  Position		  [110, 66, 115, 104]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux2"
+	  SID			  57
+	  Ports			  [3, 1]
+	  Position		  [605, 301, 610, 339]
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux20"
+	  SID			  58
+	  Ports			  [3, 1]
+	  Position		  [235, 66, 240, 104]
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux3"
+	  SID			  59
+	  Ports			  [3, 1]
+	  Position		  [605, 391, 610, 429]
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux4"
+	  SID			  60
+	  Ports			  [2, 1]
+	  Position		  [635, 361, 640, 399]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux5"
+	  SID			  61
+	  Ports			  [3, 1]
+	  Position		  [745, 271, 750, 309]
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux6"
+	  SID			  62
+	  Ports			  [2, 1]
+	  Position		  [635, 261, 640, 299]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux7"
+	  SID			  63
+	  Ports			  [3, 1]
+	  Position		  [1010, 297, 1015, 343]
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux8"
+	  SID			  64
+	  Ports			  [2, 1]
+	  Position		  [435, 301, 440, 339]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  SID			  65
+	  Ports			  [2, 1]
+	  Position		  [105, 515, 125, 535]
+	  BlockMirror		  on
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  SID			  66
+	  Ports			  [2, 1]
+	  Position		  [780, 280, 800, 300]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  SID			  67
+	  Ports			  [2, 1]
+	  Position		  [890, 100, 910, 120]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  SID			  68
+	  Ports			  [2, 1]
+	  Position		  [620, 435, 640, 455]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum4"
+	  SID			  69
+	  Ports			  [2, 1]
+	  Position		  [620, 480, 640, 500]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum5"
+	  SID			  70
+	  Ports			  [2, 1]
+	  Position		  [620, 535, 640, 555]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum6"
+	  SID			  71
+	  Ports			  [2, 1]
+	  Position		  [225, 555, 245, 575]
+	  BlockMirror		  on
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "d"
+	  SID			  72
+	  Position		  [585, 555, 615, 585]
+	  Gain			  "2"
+	  ParameterDataType	  "sfix(16)"
+	  ParameterScaling	  "2^0"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "degtorad"
+	  SID			  73
+	  Position		  [115, 575, 145, 605]
+	  Gain			  "0.01745329"
+	  ParameterDataType	  "sfix(16)"
+	  ParameterScaling	  "2^0"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "degtorad2"
+	  SID			  74
+	  Position		  [115, 660, 145, 690]
+	  Gain			  "0.01745329"
+	  ParameterDataType	  "sfix(16)"
+	  ParameterScaling	  "2^0"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "e"
+	  SID			  75
+	  Position		  [585, 500, 615, 530]
+	  Gain			  "2"
+	  ParameterDataType	  "sfix(16)"
+	  ParameterScaling	  "2^0"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "fd"
+	  SID			  76
+	  Position		  [735, 535, 795, 565]
+	  Expr			  "u(8)+u(1)*u(4)-u(2)*u(3)-u(9)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "fe"
+	  SID			  77
+	  Position		  [735, 485, 795, 515]
+	  Expr			  "u(7)+u(1)*u(3)-u(2)*u(5)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "fn"
+	  SID			  78
+	  Position		  [735, 440, 795, 470]
+	  Expr			  "u(6)+u(1)*u(5)-u(2)*u(4)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "fx"
+	  SID			  79
+	  Position		  [880, 455, 940, 485]
+	  Expr			  "u(1)*u(10)+u(4)*u(11)+u(7)*u(12)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "fy"
+	  SID			  80
+	  Position		  [880, 475, 940, 505]
+	  Expr			  "u(2)*u(10)+u(5)*u(11)+u(8)*u(12)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "fz"
+	  SID			  81
+	  Position		  [880, 495, 940, 525]
+	  Expr			  "u(3)*u(10)+u(6)*u(11)+u(9)*u(12)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "g"
+	  SID			  82
+	  Position		  [460, 590, 520, 620]
+	  Expr			  "32.087622*(1.0+1.93185e-3*sin(u(1))^2)/sqrt(1.0-6.69438e-3*sin(u(1))^2)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "great circle"
+	  SID			  83
+	  Position		  [260, 550, 320, 580]
+	  BlockMirror		  on
+	  Expr			  "u(5)*sin(u(1))"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "h"
+	  SID			  84
+	  Position		  [885, 660, 945, 690]
+	  Expr			  "u(3)"
+	}
+	Block {
+	  BlockType		  Derivative
+	  Name			  "lat, lon & alt\nderivative"
+	  SID			  85
+	  Position		  [390, 315, 420, 345]
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "lat, lon & alt dyn"
+	  SID			  86
+	  Ports			  [1, 1]
+	  Position		  [380, 68, 475, 102]
+	  FunctionName		  "posdyn_llh"
+	  Parameters		  "30.4/57.29577951,-86.7/57.2957951,100.0"
+	  EnableBusSupport	  off
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "n"
+	  SID			  87
+	  Position		  [585, 455, 615, 485]
+	  Gain			  "2"
+	  ParameterDataType	  "sfix(16)"
+	  ParameterScaling	  "2^0"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "psi_dot"
+	  SID			  88
+	  Position		  [250, 615, 310, 645]
+	  Expr			  "u(3)*tan(u(1))/u(2)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "spd"
+	  SID			  89
+	  Position		  [230, 675, 290, 705]
+	  BlockMirror		  on
+	  Expr			  "sqrt(u(1)*u(1)+u(2)*u(2)+u(3)*u(3))"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "vdd"
+	  SID			  90
+	  Position		  [150, 115, 210, 145]
+	  Expr			  "u(1)*u(5)-u(2)*u(4)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "ved"
+	  SID			  91
+	  Position		  [150, 70, 210, 100]
+	  Expr			  "u(3)*u(4)-u(1)*u(6)"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "velocity"
+	  SID			  92
+	  Ports			  [1, 1]
+	  Position		  [275, 70, 305, 100]
+	  InitialCondition	  "[0,600.,0]"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "vnd"
+	  SID			  93
+	  Position		  [150, 25, 210, 55]
+	  Expr			  "u(2)*u(6)-u(3)*u(5)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "wegbx"
+	  SID			  94
+	  Position		  [665, 185, 725, 215]
+	  Expr			  "u(1)*u(10)+u(4)*u(11)+u(7)*u(12)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "wegby"
+	  SID			  95
+	  Position		  [665, 235, 725, 265]
+	  Expr			  "u(2)*u(10)+u(5)*u(11)+u(8)*u(12)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "wegbz"
+	  SID			  96
+	  Position		  [665, 285, 725, 315]
+	  Expr			  "u(3)*u(10)+u(6)*u(11)+u(9)*u(12)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "weggd"
+	  SID			  97
+	  Position		  [465, 325, 525, 355]
+	  Expr			  "-u(5)*sin(u(1))"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "wegge"
+	  SID			  98
+	  Position		  [465, 305, 525, 335]
+	  Expr			  "-u(4)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "weggn"
+	  SID			  99
+	  Position		  [465, 285, 525, 315]
+	  Expr			  "u(5)*cos(u(1))"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "wgbbx"
+	  SID			  100
+	  Position		  [780, 70, 840, 100]
+	  Expr			  "u(1)*u(10)+u(4)*u(11)+u(7)*u(12)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "wgbby"
+	  SID			  101
+	  Position		  [780, 120, 840, 150]
+	  Expr			  "u(2)*u(10)+u(5)*u(11)+u(8)*u(12)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "wgbbz"
+	  SID			  102
+	  Position		  [780, 170, 840, 200]
+	  Expr			  "u(3)*u(10)+u(6)*u(11)+u(9)*u(12)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "wiebx"
+	  SID			  103
+	  Position		  [665, 335, 725, 365]
+	  Expr			  "u(1)*u(10)+u(4)*u(11)+u(7)*u(12)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "wieby"
+	  SID			  104
+	  Position		  [665, 365, 725, 395]
+	  Expr			  "u(2)*u(10)+u(5)*u(11)+u(8)*u(12)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "wiebz"
+	  SID			  105
+	  Position		  [665, 385, 725, 415]
+	  Expr			  "u(3)*u(10)+u(6)*u(11)+u(9)*u(12)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "wiegd"
+	  SID			  106
+	  Position		  [465, 455, 525, 485]
+	  Expr			  "-7.292115e-5*sin(u(1))"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "wiege"
+	  SID			  107
+	  Position		  [480, 410, 510, 440]
+	  Value			  "0"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "wiegn"
+	  SID			  108
+	  Position		  [465, 375, 525, 405]
+	  Expr			  "7.292115e-5*cos(u(1))"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "lat, lon & alt"
+	  SID			  109
+	  Position		  [1040, 23, 1070, 37]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "vg"
+	  SID			  110
+	  Position		  [1040, 53, 1070, 67]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "wibb, fb, h"
+	  SID			  111
+	  Position		  [1040, 313, 1070, 327]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Cbv"
+	  SID			  112
+	  Position		  [1040, 633, 1070, 647]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "psi_dot"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Cbv dyn"
+	  SrcPort		  1
+	  Points		  [105, 0]
+	  Branch {
+	    Points		    [0, 45]
+	    Branch {
+	      Points		      [-30, 0]
+	      DstBlock		      "Cbvxx"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 45]
+	      Branch {
+		DstBlock		"Cbvyx"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 45]
+		Branch {
+		  Points		  [-30, 0]
+		  DstBlock		  "Cbvzx"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, 135; 480, 0]
+		  Branch {
+		    Points		    [0, -160]
+		    DstBlock		    "Mux18"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "Cbv"
+		    DstPort		    1
+		  }
+		}
+	      }
+	    }
+	  }
+	  Branch {
+	    DstBlock		    "Mux4"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -90; 255, 0]
+	    Branch {
+	      Points		      [10, 0]
+	      DstBlock		      "Mux6"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, -180]
+	      DstBlock		      "Mux16"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Cbvxx"
+	  SrcPort		  1
+	  DstBlock		  "Cbvxx*eta_dot"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Cbvyx"
+	  SrcPort		  1
+	  DstBlock		  "Cbvyx*eta_dot"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Cbvzx"
+	  SrcPort		  1
+	  Points		  [-40, 0]
+	  DstBlock		  "Cbvzx*eta_dot"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Cbvzx*eta_dot"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Cbvyx*eta_dot"
+	  SrcPort		  1
+	  DstBlock		  "Mux1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "Mux1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Cbvxx*eta_dot"
+	  SrcPort		  1
+	  Points		  [-40, 0]
+	  DstBlock		  "Mux1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux1"
+	  SrcPort		  1
+	  Points		  [-20, 0; 0, -100]
+	  Branch {
+	    DstBlock		    "Cbv dyn"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -100]
+	    Branch {
+	      Points		      [0, -195]
+	      DstBlock		      "Mux19"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [545, 0; 0, -150]
+	      DstBlock		      "Mux16"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux20"
+	  SrcPort		  1
+	  Points		  [0, 0; 10, 0]
+	  Branch {
+	    DstBlock		    "velocity"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -65; -225, 0; 0, 700; 660, 0; 0, -160]
+	    Branch {
+	      Points		      [0, -45]
+	      Branch {
+		Points			[0, -45]
+		DstBlock		"Mux10"
+		DstPort			4
+	      }
+	      Branch {
+		DstBlock		"Mux11"
+		DstPort			4
+	      }
+	    }
+	    Branch {
+	      DstBlock		      "Mux12"
+	      DstPort		      4
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "lat, lon & alt dyn"
+	  SrcPort		  1
+	  Points		  [105, 0]
+	  Branch {
+	    Points		    [0, 160; -215, 0; 0, 85]
+	    Branch {
+	      Points		      [0, 60]
+	      Branch {
+		DstBlock		"wiegn"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 40]
+		Branch {
+		  Points		  [80, 0]
+		  DstBlock		  "wiegd"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, 175]
+		  Branch {
+		    DstBlock		    "g"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 70]
+		    DstBlock		    "h"
+		    DstPort		    1
+		  }
+		}
+	      }
+	    }
+	    Branch {
+	      Points		      [10, 0]
+	      Branch {
+		DstBlock		"lat, lon & alt\nderivative"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -20]
+		DstBlock		"Mux8"
+		DstPort			1
+	      }
+	    }
+	  }
+	  Branch {
+	    Points		    [0, -55]
+	    DstBlock		    "lat, lon & alt"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "wieby"
+	  SrcPort		  1
+	  DstBlock		  "Mux13"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "wiebx"
+	  SrcPort		  1
+	  DstBlock		  "Mux13"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "wiebz"
+	  SrcPort		  1
+	  DstBlock		  "Mux13"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "wiege"
+	  SrcPort		  1
+	  Points		  [0, -15; 35, 0]
+	  Branch {
+	    DstBlock		    "Mux3"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 105]
+	    DstBlock		    "e"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "wiegn"
+	  SrcPort		  1
+	  Points		  [40, 0]
+	  Branch {
+	    Points		    [20, 0]
+	    DstBlock		    "Mux3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "n"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "wiegd"
+	  SrcPort		  1
+	  Points		  [0, -40]
+	  Branch {
+	    Points		    [60, 0]
+	    DstBlock		    "Mux3"
+	    DstPort		    3
+	  }
+	  Branch {
+	    Points		    [0, 140]
+	    DstBlock		    "d"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux3"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  DstBlock		  "Mux4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "wegge"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  Branch {
+	    DstBlock		    "Mux2"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 170]
+	    DstBlock		    "Sum4"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "weggn"
+	  SrcPort		  1
+	  Points		  [50, 0]
+	  Branch {
+	    Points		    [10, 0]
+	    DstBlock		    "Mux2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 145]
+	    DstBlock		    "Sum3"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "weggd"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    Points		    [50, 0]
+	    DstBlock		    "Mux2"
+	    DstPort		    3
+	  }
+	  Branch {
+	    Points		    [0, 205]
+	    DstBlock		    "Sum5"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux4"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  Branch {
+	    DstBlock		    "wiebx"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 0]
+	    Branch {
+	      DstBlock		      "wieby"
+	      DstPort		      1
+	    }
+	    Branch {
+	      DstBlock		      "wiebz"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "wegby"
+	  SrcPort		  1
+	  DstBlock		  "Mux5"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "wegbx"
+	  SrcPort		  1
+	  DstBlock		  "Mux5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "wegbz"
+	  SrcPort		  1
+	  DstBlock		  "Mux5"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Mux6"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  Branch {
+	    DstBlock		    "wegbx"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 0]
+	    Branch {
+	      DstBlock		      "wegby"
+	      DstPort		      1
+	    }
+	    Branch {
+	      DstBlock		      "wegbz"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux2"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  DstBlock		  "Mux6"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "e"
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "n"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "d"
+	  SrcPort		  1
+	  DstBlock		  "Sum5"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [1, 0]
+	  SrcBlock		  "Mux10"
+	  SrcPort		  1
+	  DstBlock		  "fn"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux11"
+	  SrcPort		  1
+	  DstBlock		  "fe"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [1, 0]
+	  SrcBlock		  "Mux12"
+	  SrcPort		  1
+	  DstBlock		  "fd"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "fe"
+	  SrcPort		  1
+	  DstBlock		  "Mux14"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "fn"
+	  SrcPort		  1
+	  DstBlock		  "Mux14"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "fd"
+	  SrcPort		  1
+	  DstBlock		  "Mux14"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Mux13"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Mux5"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "wgbby"
+	  SrcPort		  1
+	  DstBlock		  "Mux15"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "wgbbx"
+	  SrcPort		  1
+	  DstBlock		  "Mux15"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "wgbbz"
+	  SrcPort		  1
+	  DstBlock		  "Mux15"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Mux16"
+	  SrcPort		  1
+	  Points		  [0, 0; 5, 0]
+	  Branch {
+	    DstBlock		    "wgbbx"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 0]
+	    Branch {
+	      DstBlock		      "wgbby"
+	      DstPort		      1
+	    }
+	    Branch {
+	      DstBlock		      "wgbbz"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux15"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  Points		  [95, 0]
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  Points		  [80, 0]
+	  DstBlock		  "Mux7"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux14"
+	  SrcPort		  1
+	  DstBlock		  "Mux18"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "degtorad"
+	  SrcPort		  1
+	  Points		  [65, 0; 0, -70]
+	  Branch {
+	    Points		    [-10, 0]
+	    DstBlock		    "Cbvzx*eta_dot"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -45]
+	    Branch {
+	      DstBlock		      "Cbvyx*eta_dot"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [0, -50]
+	      DstBlock		      "Cbvxx*eta_dot"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "g"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    Points		    [0, 55; -330, 0; 0, -20]
+	    DstBlock		    "Mux"
+	    DstPort		    3
+	  }
+	  Branch {
+	    Points		    [165, 0]
+	    DstBlock		    "Mux12"
+	    DstPort		    5
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, 50]
+	  Branch {
+	    Points		    [0, 35]
+	    DstBlock		    "Mux12"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Mux11"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum4"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    Points		    [0, -50]
+	    DstBlock		    "Mux10"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 50]
+	    DstBlock		    "Mux12"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum5"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, -60]
+	  Branch {
+	    Points		    [0, -35]
+	    DstBlock		    "Mux10"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "Mux11"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux17"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -170]
+	  DstBlock		  "Mux7"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "spd"
+	  SrcPort		  1
+	  Points		  [-35, 0; 0, -60]
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "lat, lon & alt\nderivative"
+	  SrcPort		  1
+	  DstBlock		  "Mux8"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Mux8"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  Branch {
+	    DstBlock		    "weggn"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 0]
+	    Branch {
+	      DstBlock		      "wegge"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 20]
+	      Branch {
+		DstBlock		"weggd"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 225]
+		DstBlock		"great circle"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux19"
+	  SrcPort		  1
+	  Points		  [0, 0; 10, 0]
+	  Branch {
+	    DstBlock		    "ved"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -45]
+	    DstBlock		    "vnd"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 45]
+	    DstBlock		    "vdd"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "ved"
+	  SrcPort		  1
+	  DstBlock		  "Mux20"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "vnd"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  DstBlock		  "Mux20"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "vdd"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  DstBlock		  "Mux20"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "velocity"
+	  SrcPort		  1
+	  Points		  [0, 0; 5, 0]
+	  Branch {
+	    Points		    [25, 0]
+	    Branch {
+	      DstBlock		      "lat, lon & alt dyn"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 605]
+	      Branch {
+		DstBlock		"spd"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[340, 0; 0, -140]
+		Branch {
+		  Points		  [0, -45]
+		  Branch {
+		    Points		    [0, -45]
+		    DstBlock		    "Mux10"
+		    DstPort		    3
+		  }
+		  Branch {
+		    DstBlock		    "Mux11"
+		    DstPort		    3
+		  }
+		}
+		Branch {
+		  DstBlock		  "Mux12"
+		  DstPort		  3
+		}
+	      }
+	    }
+	    Branch {
+	      Points		      [0, -25]
+	      DstBlock		      "vg"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    Points		    [0, 175; -225, 0; 0, -165]
+	    DstBlock		    "Mux19"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "h"
+	  SrcPort		  1
+	  Points		  [45, 0]
+	  DstBlock		  "Mux7"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "great circle"
+	  SrcPort		  1
+	  DstBlock		  "Sum6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum6"
+	  SrcPort		  1
+	  Points		  [-105, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "psi_dot"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -30; -90, 0]
+	  DstBlock		  "Sum6"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "degtorad2"
+	  SrcPort		  1
+	  Points		  [25, 0; 0, -55]
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "fy"
+	  SrcPort		  1
+	  DstBlock		  "Mux17"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "fx"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  DstBlock		  "Mux17"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux18"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  Branch {
+	    DstBlock		    "fx"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 0]
+	    Branch {
+	      DstBlock		      "fy"
+	      DstPort		      1
+	    }
+	    Branch {
+	      DstBlock		      "fz"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "fz"
+	  SrcPort		  1
+	  Points		  [5, 0]
+	  DstBlock		  "Mux17"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Mux7"
+	  SrcPort		  1
+	  DstBlock		  "wibb, fb, h"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "degtorad"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In2"
+	  SrcPort		  1
+	  DstBlock		  "degtorad2"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Lookup
+      Name		      "eta_dot\n(bank cmd der)"
+      SID		      113
+      Position		      [80, 299, 130, 351]
+      InputValues	      "[0,59.99,60.01,69.99,70.01,89.99,90.01,99.99,100.01,159.99,160.01,169.99,170.01,189.99,190.01"
+      ",199.99,200.01,259.99,260.01,269.99,270.01,289.99,290.01,299.99,300.01,359.99,360.01,369.99,370.01,389.99,390.01"
+      ",399.99,400.01,600.]"
+      Table		      "[0,0,2.5,2.5,0,0,-2.5,-2.5,0,0,-2.5,-2.5,0,0,2.5,2.5,0,0,-0.0,-0.0,0,0,0.0,0.0,0,0,0.0,0.0,0,0,-0."
+      "0,-0.0,0,0]"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "gyro/accel\ninstrument models &\naltimeter model"
+      SID		      114
+      Ports		      [1, 1]
+      Position		      [405, 338, 670, 412]
+      DropShadow	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"gyro/accel\ninstrument models &\naltimeter model"
+	Location		[1, 79, 1281, 828]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "rates,\naccel,\nheight"
+	  SID			  115
+	  Position		  [25, 163, 55, 177]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux26"
+	  SID			  116
+	  Ports			  [7, 1]
+	  Position		  [225, 119, 230, 221]
+	  ShowName		  off
+	  Inputs		  "7"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "altimeter"
+	  SID			  117
+	  Position		  [110, 300, 170, 330]
+	  Expr			  "(1.0+0.0)*u(7)+0.0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "x_accel"
+	  SID			  118
+	  Position		  [110, 155, 170, 185]
+	  Expr			  "(1.0+0.0)*u(4)+0.0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "x_gyro"
+	  SID			  119
+	  Position		  [110, 15, 170, 45]
+	  Expr			  "(1.0+0.0)*u(1)+0.0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "y_accel"
+	  SID			  120
+	  Position		  [110, 200, 170, 230]
+	  Expr			  "(1.0+0.0)*u(5)+0.0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "y_gyro"
+	  SID			  121
+	  Position		  [110, 65, 170, 95]
+	  Expr			  "(1.0+0.0)*u(2)+0.0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "z_accel"
+	  SID			  122
+	  Position		  [110, 250, 170, 280]
+	  Expr			  "(1.0+0.0)*u(6)+0.0"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "z_gyro"
+	  SID			  123
+	  Position		  [110, 110, 170, 140]
+	  Expr			  "(1.0+0.0)*u(3)+0.0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "gyro, accel, alt"
+	  SID			  124
+	  Position		  [270, 163, 300, 177]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "x_accel"
+	  SrcPort		  1
+	  DstBlock		  "Mux26"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "y_accel"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -30]
+	  DstBlock		  "Mux26"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "z_accel"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, -65]
+	  DstBlock		  "Mux26"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "altimeter"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  DstBlock		  "Mux26"
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "z_gyro"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, 30]
+	  DstBlock		  "Mux26"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "y_gyro"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 60]
+	  DstBlock		  "Mux26"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "x_gyro"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  DstBlock		  "Mux26"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "rates,\naccel,\nheight"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  Branch {
+	    Points		    [0, -50]
+	    Branch {
+	      Points		      [0, -40]
+	      Branch {
+		Points			[0, -50]
+		DstBlock		"x_gyro"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"y_gyro"
+		DstPort			1
+	      }
+	    }
+	    Branch {
+	      Points		      [5, 0]
+	      DstBlock		      "z_gyro"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    DstBlock		    "x_accel"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 40]
+	    Branch {
+	      Points		      [5, 0]
+	      DstBlock		      "y_accel"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 40]
+	      Branch {
+		Points			[5, 0]
+		DstBlock		"z_accel"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 65]
+		DstBlock		"altimeter"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux26"
+	  SrcPort		  1
+	  DstBlock		  "gyro, accel, alt"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "nav\nlat_vs_lon"
+      SID		      125
+      Ports		      [2]
+      Position		      [955, 356, 985, 389]
+      LibraryVersion	      "1.216"
+      SourceBlock	      "simulink/Sinks/XY Graph"
+      SourceType	      "XY scope."
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      xmin		      "-86.8"
+      xmax		      "-85.6"
+      ymin		      "30."
+      ymax		      "30.8"
+      st		      "1"
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "pos, vel & att\ndynamics"
+      SID		      126
+      Ports		      [1, 1]
+      Position		      [715, 359, 795, 391]
+      FunctionName	      "wander_az_nav"
+      Parameters	      "-6.17875e-5,1.85093e-4,7.07415e-1,7.06798e-1,0,-600.,0,.8625137,0,.5060338,-.5051947,.0575641,"
+      ".8610835,-.0291294,-.9983418,.0496498,100."
+      EnableBusSupport	      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "sat vis"
+      SID		      127
+      Ports		      [1]
+      Position		      [650, 109, 680, 141]
+      Floating		      off
+      Location		      [5, 81, 1285, 827]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "600"
+      YMin		      "10"
+      YMax		      "45"
+      SaveName		      "ScopeData4"
+      DataFormat	      "StructureWithTime"
+      MaxDataPoints	      "60000"
+      Decimation	      "10"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "sat vis1"
+      SID		      138
+      Ports		      [1]
+      Position		      [175, 239, 205, 271]
+      Floating		      off
+      Location		      [5, 81, 1285, 827]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "600"
+      YMin		      "-2.5"
+      YMax		      "2.5"
+      DataFormat	      "StructureWithTime"
+      MaxDataPoints	      "60000"
+      Decimation	      "10"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "sat vis2"
+      SID		      139
+      Ports		      [1]
+      Position		      [185, 464, 215, 496]
+      Floating		      off
+      Location		      [5, 81, 1285, 827]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "600"
+      YMin		      "-25"
+      YMax		      "25"
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+      MaxDataPoints	      "60000"
+      Decimation	      "10"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Fcn
+      Name		      "slat"
+      SID		      128
+      Position		      [870, 380, 930, 410]
+      Expr		      "u(1)"
+    }
+    Block {
+      BlockType		      Fcn
+      Name		      "slon"
+      SID		      129
+      Position		      [870, 335, 930, 365]
+      Expr		      "u(2)"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "true & est\ntilts"
+      SID		      130
+      Ports		      [1]
+      Position		      [1175, 334, 1205, 366]
+      Floating		      off
+      Location		      [5, 81, 1285, 827]
+      Open		      off
+      NumInputPorts	      "1"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "600"
+      YMin		      "-0.0002"
+      YMax		      "0.0009"
+      SaveName		      "ScopeData6"
+      DataFormat	      "StructureWithTime"
+      MaxDataPoints	      "60000"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "true & est\nvel errors"
+      SID		      131
+      Ports		      [1]
+      Position		      [1175, 259, 1205, 291]
+      Floating		      off
+      Location		      [5, 81, 1285, 827]
+      Open		      off
+      NumInputPorts	      "1"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "600"
+      YMax		      "10"
+      SaveName		      "ScopeData3"
+      DataFormat	      "StructureWithTime"
+      MaxDataPoints	      "60000"
+      Decimation	      "100"
+      SampleTime	      "0"
+    }
+    Line {
+      SrcBlock		      "Clock"
+      SrcPort		      1
+      Points		      [0, 0; 10, 0]
+      Branch {
+	Points			[0, -40]
+	DstBlock		"eta_dot\n(bank cmd der)"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 45]
+	DstBlock		"bank cmd\n"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "eta_dot\n(bank cmd der)"
+      SrcPort		      1
+      Points		      [25, 0]
+      Branch {
+	Points			[10, 0]
+	DstBlock		"environment model\n- truth data"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"sat vis1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "pos, vel & att\ndynamics"
+      SrcPort		      1
+      Points		      [5, 0]
+      Branch {
+	DstBlock		"Mux25"
+	DstPort			1
+      }
+      Branch {
+	Points			[15, 0]
+	Branch {
+	  Points		  [25, 0]
+	  Branch {
+	    Points		    [0, -25]
+	    DstBlock		    "slon"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 20]
+	    DstBlock		    "slat"
+	    DstPort		    1
+	  }
+	}
+	Branch {
+	  Points		  [0, -60]
+	  DstBlock		  "Evaluation"
+	  DstPort		  3
+	}
+      }
+      Branch {
+	Points			[0, 60; 200, 0; 0, -105]
+	DstBlock		"Evaluation"
+	DstPort			4
+      }
+    }
+    Line {
+      SrcBlock		      "bank cmd\n"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	Points			[15, 0]
+	DstBlock		"environment model\n- truth data"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 70]
+	DstBlock		"sat vis2"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "GPS sat vis"
+      SrcPort		      1
+      DstBlock		      "Demux2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux2"
+      SrcPort		      5
+      Points		      [40, 0]
+      DstBlock		      "GDOP"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux2"
+      SrcPort		      1
+      DstBlock		      "Mux21"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux2"
+      SrcPort		      2
+      DstBlock		      "Mux21"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Demux2"
+      SrcPort		      3
+      DstBlock		      "Mux21"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Demux2"
+      SrcPort		      4
+      DstBlock		      "Mux21"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Mux21"
+      SrcPort		      1
+      Points		      [15, 0]
+      DstBlock		      "sat vis"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux2"
+      SrcPort		      6
+      DstBlock		      "Mux23"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux2"
+      SrcPort		      7
+      DstBlock		      "Mux23"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Demux2"
+      SrcPort		      9
+      DstBlock		      "Mux23"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Demux2"
+      SrcPort		      10
+      DstBlock		      "Mux23"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "Demux2"
+      SrcPort		      11
+      DstBlock		      "Mux23"
+      DstPort		      6
+    }
+    Line {
+      SrcBlock		      "Demux2"
+      SrcPort		      12
+      DstBlock		      "Mux23"
+      DstPort		      7
+    }
+    Line {
+      SrcBlock		      "Demux2"
+      SrcPort		      13
+      DstBlock		      "Mux23"
+      DstPort		      8
+    }
+    Line {
+      SrcBlock		      "Demux2"
+      SrcPort		      8
+      DstBlock		      "Mux23"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Mux23"
+      SrcPort		      1
+      DstBlock		      "Mux25"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Mux25"
+      SrcPort		      1
+      DstBlock		      "K-filter"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "K-filter"
+      SrcPort		      1
+      Points		      [100, 0]
+      DstBlock		      "Evaluation"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "gyro/accel\ninstrument models &\naltimeter model"
+      SrcPort		      1
+      DstBlock		      "pos, vel & att\ndynamics"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Evaluation"
+      SrcPort		      2
+      Points		      [20, 0]
+      DstBlock		      "true & est\ntilts"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Evaluation"
+      SrcPort		      1
+      Points		      [15, 0; 0, -25]
+      DstBlock		      "true & est\nvel errors"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "slon"
+      SrcPort		      1
+      Points		      [5, 0]
+      DstBlock		      "nav\nlat_vs_lon"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "slat"
+      SrcPort		      1
+      Points		      [5, 0]
+      DstBlock		      "nav\nlat_vs_lon"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "environment model\n- truth data"
+      SrcPort		      3
+      DstBlock		      "gyro/accel\ninstrument models &\naltimeter model"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "environment model\n- truth data"
+      SrcPort		      1
+      Points		      [30, 0; 0, -110]
+      DstBlock		      "GPS sat vis"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "environment model\n- truth data"
+      SrcPort		      2
+      Points		      [40, 0; 0, -50]
+      DstBlock		      "Evaluation"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "environment model\n- truth data"
+      SrcPort		      4
+      Points		      [30, 0; 0, 90; 635, 0; 0, -145]
+      DstBlock		      "Evaluation"
+      DstPort		      5
+    }
+  }
+}
